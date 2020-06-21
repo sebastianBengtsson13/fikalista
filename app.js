@@ -9,13 +9,15 @@ const rl = readline.createInterface({
 
 console.log('Hello world');
 
-fs.readFile('.\\Resorces\\fikare.json', function (err,data){
+fs.readFile('.\\Resorces\\fikare.json', function (err){
     if (err){
         console.log(err);
     }
-    console.log(data);
+    console.log(fs.p);
 });
 
 var message = rl.question("Skriv något!", function (name) {
     console.log(message);
 });
+
+console.log("git test")
